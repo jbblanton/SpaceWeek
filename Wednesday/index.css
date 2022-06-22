@@ -1,0 +1,69 @@
+:root {
+  --pink: #fbe6f4ff;
+  --yellow: #fffad1ff;
+  --green: #e1f0e5ff;
+  --blue: #b5caf9ff;
+  --orange: #f5e6db;
+  --raisin: #2b283aff;
+  --grey: #d4d4d4;
+}
+
+body {
+  background-color: var(--raisin);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  font-size: 2em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.countdown-display {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+p.go {
+  animation-duration: 10s;
+  animation-name: liftoff;
+}
+
+@keyframes liftoff {
+  0% {
+    font-size: 100%;
+    margin-bottom: 10%;
+  }
+  10% {
+    font-size: 120%;
+    margin-bottom: 20%;
+  }
+  18% {
+    font-size: 135%;
+    margin-bottom: 40%;
+  }
+  25% {
+    font-size: 150%;
+    margin-bottom: 75%;
+    /* width: 125%; */
+  }
+  50% {
+    font-size: 200%;
+    margin-bottom: 90%;
+  }
+  75% {
+    font-size: 250%;
+    margin-bottom: 120%;
+    margin-left: 100%;
+  }
+  100% {
+    font-size: 300%;
+    margin-bottom: 150%;
+    margin-left: 150%;
+  }
+}
